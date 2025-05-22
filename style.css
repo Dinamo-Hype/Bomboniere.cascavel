@@ -1,0 +1,57 @@
+/* Cores personalizadas */
+:root {
+    --primary: #A5D8FF;
+    --secondary: #C3B1E1;
+    --accent: #FFD6A5;
+    --background: #F8F9FA;
+    --text: #495057;
+    --success: #B2F2BB;
+    --warning: #FFEC99;
+    --danger: #FFC9C9;
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--secondary);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a78bfa;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.3s ease-out forwards;
+}
+
+/* Override do Tailwind para modais */
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo para inputs com erro */
+.input-error {
+    border-color: #f87171 !important;
+}
+
+.error-message {
+    color: #f87171;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
